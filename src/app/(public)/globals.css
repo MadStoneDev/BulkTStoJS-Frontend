@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #48494e;
+  --heading: #090f32;
+}
+
+body {
+  @apply font-body;
+  @apply text-base;
+  @apply md:text-lg;
+  @apply xl:text-2xl;
+  @apply font-light;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-heading;
+  color: var(--heading);
+}
+
+h1 {
+  @apply text-4xl;
+  @apply md:text-5xl;
+  @apply xl:text-7xl;
+}
+
+h2 {
+  @apply text-2xl;
+  @apply md:text-3xl;
+  @apply xl:text-5xl;
+}
+
+h3 {
+  @apply text-xl;
+  @apply md:text-2xl;
+  @apply xl:text-4xl;
+}
+
+h4 {
+  @apply text-3xl;
+}
+
+h5 {
+  @apply text-2xl;
+}
